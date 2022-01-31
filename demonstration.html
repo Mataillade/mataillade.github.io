@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg" href="img/happy.svg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demonstration.css">
+    <link rel="stylesheet" href="css/dialogue.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav_menu">
+            <div class="div_menu">
+                <div class="div_img">
+                    <a href="presentation.html"><img src="img/normal.svg"></a>
+                </div>
+                <div class="div_liens">
+                    <ul class="liens">
+                        <li class="li_nav"><a href="presentation.html">Présentation</a></li>
+                        <li class="li_nav"><a href="demonstration.html" id="current_page">Démonstration</a></li>
+                        <li class="li_nav"><a href="question.html">Question</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article class="article_container">
+        <div id="titre">
+            <h1>Démonstration</h1>
+        </div>
+
+        <article class="article article_dialogue">
+            <div class="div_img_normal_div">
+                <img src="img/normal.svg">
+            </div>
+            <div class="dialogue">
+                <ul>
+                    <li>
+                        <div class="dialogue_text">
+                            Tu veux savoir comment marche <strong class="strong-orange">Rust</strong> ?!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            Pas de problème ! Je vais te montrer !
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            Commençons par <strong>l'installation!</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="article">
+
+            <div class="div_article">
+                <h2>Comment installer <strong class="strong-orange">Rust</strong>?</h2>
+                <h3>Linux, Windowd et MacOS</h3>
+                <p>&nbsp&nbsp&nbsp Rien de plus simple d'installer Rust ! Il est recommandé d'installer et d'utiliser les setup "<strong class="strong-orange">rustup</strong>" sur tous les OS.</p>
+                <p>&nbsp&nbsp&nbsp Plus d'informations sur <a href="https://www.rust-lang.org/fr/learn/get-started" class="strong-orange">la page de documentation</a>.</p>
+                <h3>Environnements</h3>
+                <p>&nbsp&nbsp&nbsp La majorité des IDE sont compatibles : VS Code, Sublime Text, Atom, Intellij Idea, Eclipse, etc... </br>
+                    Tu trouvera bien ton préf' !
+                </p>
+        </article>
+
+        <article class="article article_dialogue">
+            <div class="dialogue">
+                <ul>
+                    <li>
+                        <div class="dialogue_text">
+                            Voila maintenant tu sais comment l'installer !
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            Maintenant tu dois vouloir commencer un projet non !? Go !
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="div_img_normal_div">
+                <img src="img/coucou.svg">
+            </div>
+        </article>
+
+        <article class="article">
+            <div class="div_article">
+                <h2>Comment lancer un projet avec <strong class="strong-orange">Rust</strong>?</h2>
+                <h3>Un peu d'explication d'abord</h3>
+                <p>&nbsp&nbsp&nbsp <strong class="strong-orange">Rustup</strong> installe aussi un gestionnaire de paquets nommé Cargo.</br>
+                    C’est quoi? Et bien cela sert à plusieurs choses mais ici on va s’en servir pour construire notre projet et le lancer.
+                </p>
+                <p>&nbsp&nbsp&nbsp <strong class="strong-orange">Cargo</strong> permet aussi de lancer des tests, gérer la documentation de votre projet et d'autres nombreuses choses!</p>
+                <h3>Créons le projet !</h3>
+                <h4>Une seule commande !</h4>
+                <div class="code">
+                    $ cargo new hello-rust
+                </div>
+                <p>&nbsp&nbsp&nbsp Rien de plus simple non? </p>
+                <h4>Resultat</h4>
+                <p>Nous avons maintenant un fichier avec notre projet. Il contient :</p>
+                <ul>
+                    <li>Cargo.toml</li>
+                    <li>
+                        src
+                        <ul>
+                            <li>main.rs</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>&nbsp&nbsp&nbsp<strong class="strong-orange">Cargo.toml</strong> est le fichier manifeste de Rust. C'est là que vous gardez les métadonnées pour votre projet, ainsi que les dépendances.</p>
+                <p>&nbsp&nbsp&nbsp<strong class="strong-orange">main.rs</strong> est l'endroit où vous écrirez le code de notre application.</p>
+                <h4>Hello world !</h4>
+                <p>&nbsp&nbsp&nbsp A quoi ressemble le code d'un Hello world ?</p>
+                <div class="code">fn main() {</br>&nbsp&nbsp&nbsp println!("Hello, world!");</br> }
+                </div>
+                <p>&nbsp&nbsp&nbsp Puis on lance le projet avec:</p>
+                <div class="code">
+                    $ cargo run
+                </div>
+        </article>
+
+        <article class="article article_dialogue">
+            <div class="div_img_normal_div">
+                <img src="img/happy.svg">
+            </div>
+            <div class="dialogue">
+                <ul>
+                    <li>
+                        <div class="dialogue_text">
+                            Maintenant ta console affiche <strong class="strong-orange">Hello world !</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            Et voila ton premier programme en <strong class="strong-orange">Rust</strong> !!!
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            C'est cool tout ça mais je veux te montrer encore quelque chose ! </br>Allons un peu plus loin !
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="article">
+            <div class="div_article">
+                <h2>Utiliser des <strong class="strong-orange">dépendances</strong></h2>
+                <p>&nbsp&nbsp&nbsp Bien je veux apparaitre dans ta console. Ca tombe bien <strong class="strong-orange">ferris-says</strong> est une dépendance qui le permet !</p>
+                <h4>Comment ajouter une dépendance?</h4>
+                <p>&nbsp&nbsp&nbsp Rien de plus simple. Dans Cargo.toml ajoutes: </p>
+                <div class="code">ferris-says = "0.2"</div>
+                <p>&nbsp&nbsp&nbsp Puis utilises cette commande </p>
+                <div class="code">$ cargo build</div>
+                <p>&nbsp&nbsp&nbsp Voila cargo ajoute la dépendance comme un grand!</p>
+                <h4>Comment utiliser la dépendance dans le code?</h4>
+                <p>&nbsp&nbsp&nbsp Encore une fois rien de plus simple! Tu l'importes avec :</p>
+                <div class="code">use ferris_says::say;</div>
+                <h4>Un petit exemple d'utilisation</h4>
+                <div class="code">
+                    use ferris_says::say;</br>
+                    use std::io::{stdout, BufWriter};</br>
+                    </br>
+                    fn main() {</br>
+                    &nbsp&nbsp&nbsplet stdout = stdout();</br>
+                    &nbsp&nbsp&nbsplet message = String::from("Salut jeune Rustacé !");</br>
+                    &nbsp&nbsp&nbsplet width = message.chars().count();</br>
+                    </br>
+                    &nbsp&nbsp&nbsp let mut writer = BufWriter::new(stdout.lock());</br>
+                    &nbsp&nbsp&nbsp say(message.as_bytes(), width, &mut writer).unwrap();</br>
+                    }</br>
+                </div>
+        </article>
+
+        <article class="article article_dialogue">
+            <div class="dialogue">
+                <ul>
+                    <li>
+                        <div class="dialogue_text">
+                            Voila maintenant je parle aussi dans ta console !
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            J'ai fais le tour des éléments principaux de <strong class="strong-orange">Rust</strong> !
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dialogue_text">
+                            J'espère que cela t'as plu ! Au revoir !!
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="div_img_normal_div">
+                <img src="img/coucou.svg">
+            </div>
+        </article>
+
+    </article>
+
+
+    <footer>
+        <div class="strong-orange">Merci de suivre cette présentation! :)</div>
+        <div><img class="img_happy" src="img/happy.svg"></div>
+        <div class="strong-orange">Taillade Matias</div>
+    </footer>
+
+</body>
+
+</html>

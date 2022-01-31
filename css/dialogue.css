@@ -1,0 +1,31 @@
+.article_dialogue {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dialogue {
+    width: 50%;
+    padding: 20px 50px;
+    border-radius: 15px;
+}
+
+.dialogue_text {
+    background-color: #567288;
+    padding: 20px 50px;
+    margin-top: 25px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+}
+
+.strong-orange {
+    background: -webkit-linear-gradient(135deg, #f49300, #cc3a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dialogue li {
+    box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.2);
+    list-style: none;
+    font-size: 1.7em;
+}
