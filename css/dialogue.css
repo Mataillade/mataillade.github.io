@@ -5,7 +5,7 @@
 }
 
 .dialogue {
-    width: 50%;
+    width: 40%;
     padding: 20px 50px;
     border-radius: 15px;
 }
@@ -16,6 +16,10 @@
     margin-top: 25px;
     border-radius: 15px;
     border-bottom-right-radius: 0;
+}
+
+.div_img_dialogue {
+    width: 40%;
 }
 
 .strong-orange {
